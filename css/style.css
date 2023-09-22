@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+header{
+    max-height: 15vh;
+    background-color: #000;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+h1{
+    font-family: lobster;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a:hover{
+    transition: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    color: #736F72;
+}
+
+.nav-links>li>a{
+    text-decoration: none;
+    color: #F2F4F3;
+}
+
+main{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 3rem;
+    color: #caf0f8;
+}
+
+.container h3{
+    padding: 12px 0;
+    font-size: 2rem;
+    color: black;
+}
+
+input[type='text']{
+    min-width: 29vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.btn{
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultCont{
+    color: black;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        font-size: 15px;
+    }
+
+    input[type='text'] {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .heading{
+        padding: 6px 0;
+        font-size: 2rem;
+    }
+
+    .container h3{
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+}
